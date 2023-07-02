@@ -29,7 +29,7 @@ class Solution {
         }
         for(int i=1; i<m; i++){
             if(matrix[i][0] == 0){
-                for(int j=0; j<n; j++){
+                for(int j=1; j<n; j++){
                     matrix[i][j] = 0;
                 }
             }
