@@ -7,7 +7,7 @@ class Solution {
         
         for(int num: nums){
             sum += num;
-            int key = (sum % k + k) % k;
+            int key = (sum % k + k) % k; // for negative integer 
             count += map.getOrDefault(key,0);
             map.put(key, map.getOrDefault(key,0)+1);
         }
